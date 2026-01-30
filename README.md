@@ -29,13 +29,6 @@ Launch Minecraft quickly
 ✔ Auto-config saving
 ✔ Open source
 
-📦 Download
-
-Download the latest version from Releases:
-
-👉 https://github.com/YOURNAME/SisumaaLauncher/releases
-
-(Replace YOURNAME with your GitHub username)
 
 🔐 Security & Trust
 

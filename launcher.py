@@ -1,33 +1,4 @@
 # Sisumaa Client ver 1.0 (PRO v8) — single-file launcher.py
-# Requirements: PySide6
-# Optional (recommended for 3D skin + Modrinth embed): PySide6-WebEngine
-#
-# Put these files NEXT TO launcher.py / launcher.exe (relative paths so it works on other PCs):
-#   background.bmp
-#   Selgrootu_must_mehike_istub_1.bmp
-#   Montserrat-VariableFont_wght.ttf   (or any readable .ttf you want)
-#   Download_1.gif                     (Home media, phone aspect)
-#
-# Install files (also next to launcher):
-#   fabric-installer-1.1.1.jar
-#   TLauncher-Installer-1.9.5.5.exe
-#   starter-core-1.266-v2.jar
-#   Sisumaa2SMP-Installer.exe
-#
-# Notes (important):
-# - Official Microsoft/Mojang login CANNOT be “magically” enabled without an Azure App registration (Client ID).
-#   That’s why your MSAL device-flow gave "unauthorized_client". This launcher keeps OFFLINE mode (username only)
-#   and opens official pages in browser when needed.
-# - Auto-joining a server directly from a launcher depends on launching Minecraft with proper args or a custom launcher
-#   that manages game runtime. Here we do the safe approach: copy IP + open launcher + “Add Server” help.
-#
-# Build (Windows EXE):
-#   python -m pip install -U pyinstaller
-#   pyinstaller --noconsole --onefile --name "SisumaaClient" --add-data "background.bmp;." --add-data "Selgrootu_must_mehike_istub_1.bmp;." --add-data "Montserrat-VariableFont_wght.ttf;." --add-data "Download_1.gif;." launcher.py
-#
-# Optional (if you want 3D skin + embedded Modrinth in the EXE):
-#   python -m pip install -U PySide6 PySide6-WebEngine msal
-#   (then build again)
 #
 # macOS .app:
 #   You MUST build on macOS (you cannot convert a Windows .exe into a real macOS .app).
